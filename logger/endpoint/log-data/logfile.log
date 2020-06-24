@@ -1,0 +1,48 @@
+{
+  "time": "2020-06-10T17:17:05Z",
+  "level": "info",
+  "msg": "Liveness check performed",
+  "container": "title",
+  "pod": "title-v1-6c9f679468-r6ts7",
+  "request": "GET",
+  "status": "OK",
+  "statuscode": "200",
+  "type": "liveness-check",
+  "url": "http://172.17.0.18:8081"
+ },
+ {
+  "time": "2020-06-10T17:17:05Z",
+  "level": "info",
+  "msg": "Liveness check performed",
+  "container": "title",
+  "pod": "title-v1-6c9f679468-r6ts7",
+  "request": "GET",
+  "status": "OK",
+  "statuscode": "200",
+  "type": "liveness-check",
+  "url": "http://172.17.0.18:8081"
+ },
+ {
+  "time": "2020-06-10T17:17:05Z",
+  "level": "info",
+  "msg": "Liveness check performed",
+  "container": "title",
+  "pod": "title-v1-6c9f679468-r6ts7",
+  "request": "GET",
+  "status": "OK",
+  "statuscode": "200",
+  "type": "liveness-check",
+  "url": "http://172.17.0.18:8081"
+ },
+ {
+  "time": "2020-06-10T17:17:05Z",
+  "level": "info",
+  "msg": "Liveness check performed",
+  "container": "title",
+  "pod": "title-v1-6c9f679468-r6ts7",
+  "request": "GET",
+  "status": "OK",
+  "statuscode": "200",
+  "type": "liveness-check",
+  "url": "http://172.17.0.18:8081"
+ },

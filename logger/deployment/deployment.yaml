@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logger
+  labels:
+    app: logger
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logger
+  template:
+    metadata:
+      labels:
+        app: logger
+    spec:
+      containers:
+        - name: logger
+          image: logger:1
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+          - name: log-data
+            mountPath: /log-data
+        - name: log-api
+          image: log-api:1
+          imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 9080 
+          volumeMounts:
+          - name: log-data
+            mountPath: /log-data
+        - name: log-sender
+          image: log-sender:1
+          imagePullPolicy: IfNotPresent
+      volumes:
+      - name: log-data
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: logger-svc
+spec:
+  type: NodePort
+  ports:
+    - port: 9080
+      name: http
+  selector:
+    app: logger
+    
