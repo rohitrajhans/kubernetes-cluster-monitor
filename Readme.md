@@ -16,6 +16,7 @@ The framework provides an easy-to-use solution to implement policies to target a
 - In case a pod on a worker node fails, it can be quarantined and possibly pushed to another node. A service disruption can be prevented by taking appropriate action on similar pods.
 
 ## Architecture Overview:
+![Architecture](https://raw.githubusercontent.com/rohitrajhans/kubernetes-cluster-monitor/master/media/framework.png)
 
 ## Installation:
 - #### Requirements:
@@ -30,7 +31,7 @@ The framework provides an easy-to-use solution to implement policies to target a
 	4. Create a policy. A sample policy can be observed in `CustomResource/deployment/sample-resource.yaml`. Apply the policy to the cluster using `kubectl create -f CustomResource/deployment/sample-resource.yaml`.
 	5. The setup is now complete. A sidecar will be injected to all the matching pods.
 
-- #### Individual Component Setup:
+## Individual Component Setup:
 - Before setting up framework, create **docker images** for each individual component:
 		1. Custom Resource: Run `CustomResource/build.sh`
 		2. Wehook: Run `cd webhook; make`
