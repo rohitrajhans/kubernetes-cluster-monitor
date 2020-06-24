@@ -16,7 +16,7 @@ The framework provides an easy-to-use solution to implement policies to target a
 - In case a pod on a worker node fails, it can be quarantined and possibly pushed to another node. A service disruption can be prevented by taking appropriate action on similar pods.
 
 ## Architecture Overview:
-![Architecture](https://raw.githubusercontent.com/rohitrajhans/kubernetes-cluster-monitor/master/media/framework.png)
+![Architecture](https://raw.githubusercontent.com/rohitrajhans/kubernetes-cluster-monitor/master/media/framework_architecture.png)
 
 ## Installation:
 - #### Requirements:
