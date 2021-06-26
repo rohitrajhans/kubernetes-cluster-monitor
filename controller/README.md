@@ -19,4 +19,4 @@ Execute the generator
 
 ./tools/codegen.sh -g $GEN -m $MODULE -p $PACKAGE -w $WSROOT
 
-
+make docker
